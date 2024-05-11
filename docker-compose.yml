@@ -1,0 +1,6 @@
+﻿services:
+  sparky:
+    image: sparky
+    build:
+      context: .
+      dockerfile: Sparky/Dockerfile
