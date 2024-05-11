@@ -16,6 +16,17 @@ public class CalculatorNUnitTest
     }
 
     [Test]
+    [TestCase(3.4, 5, ExpectedResult = 8.4)]
+    [TestCase(3.4, 6, ExpectedResult = 9.4)]
+    [TestCase(3.4, 7, ExpectedResult = 10.4)]
+    [TestCase(3.4, 8, ExpectedResult = 11.4)]
+    public double AddNumbers_Double(double a, double b)
+    {
+        Calculator calculator = new Calculator();
+        return calculator.AddNumbers(a, b);
+    }
+    
+    [Test]
     public void CheckIfNumberIsOdd_Correct()
     {
         Calculator calculator = new Calculator();
