@@ -24,4 +24,13 @@ public class CustomerNUnitTest
         Assert.That(fullName, Does.Contain(" "));
     }
     
+    [Test]
+    public void CombineName_InputFirstNameAndLastName_ThrowsException()
+    {
+     Assert.Throws<ArgumentException>(() =>
+     {
+         _customer.CombineNames("", "Gomes");
+     });
+    }
+    
 }

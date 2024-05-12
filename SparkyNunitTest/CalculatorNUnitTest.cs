@@ -12,7 +12,7 @@ public class CalculatorNUnitTest
         Calculator calculator = new Calculator();
         int result = calculator.AddNumbers(2, 3);
         
-        Assert.That(6, Is.EqualTo(result));
+        Assert.That(5, Is.EqualTo(result));
     }
 
     [Test]
@@ -73,4 +73,5 @@ public class CalculatorNUnitTest
         Assert.That(result, Is.Ordered.Ascending);
         Assert.That(result, Is.Unique);
     }
+    
 }
